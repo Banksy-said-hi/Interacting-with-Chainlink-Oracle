@@ -3,6 +3,11 @@ pragma solidity 0.8.9;
 
 import "@chainlink/contracts/src/v0.8/ChainlinkClient.sol";
 
+// (0) Deploy the contract on Kovan network
+// (1) provide some LINK tokens and send them to your contract
+// (2) Execute requestLocationCurrentConditions() function with your desired inputs
+// (3) call 0 index of locationCurrentConditionsArray[] and copy it
+// (4) Enter it on all of available mappings inputs to see results
 
 contract WeatherOracle is ChainlinkClient {
     using Chainlink for Chainlink.Request;
